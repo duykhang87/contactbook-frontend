@@ -94,6 +94,15 @@ export default {
                 "Số điện thoại hợp lệ." 
             ),
         }); 
+        //todo /add Contact: Nếu chưa có contact thì gán object mặc định cho nó.
+      const newContact = {
+         id: '',
+         name: '',
+         email: '',
+         address: '',
+         phone: 0,
+         favorite: false
+      };
         return { 
             contactLocal: this.contact, 
             schema, 
